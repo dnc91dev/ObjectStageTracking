@@ -8,6 +8,7 @@ class SlidingObject:
             speed (float): La velocidad del objeto que se desliza.
             direction (str): La dirección en la que se desliza el objeto.
         """
+        #aca se encuentra la diferencia para encapsular, en este caso encapsular variables
         self.__name = name
         self.__speed = speed
         self.__direction = direction
