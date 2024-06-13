@@ -8,9 +8,9 @@ class SlidingObject:
             speed (float): La velocidad del objeto que se desliza.
             direction (str): La dirección en la que se desliza el objeto.
         """
-        self.name = name
-        self.speed = speed
-        self.direction = direction
+        self.__name = name
+        self.__speed = speed
+        self.__direction = direction
 
     def move(self):
         """
@@ -19,12 +19,12 @@ class SlidingObject:
         Returns:
             str: Una cadena que indica el movimiento del objeto.
         """
-        if self.direction == "forward":
-            return f"{self.name} se desliza hacia adelante a una velocidad de {self.speed} m/s."
-        elif self.direction == "backward":
-            return f"{self.name} se desliza hacia atrás a una velocidad de {self.speed} m/s."
+        if self.__direction == "forward":
+            return f"{self.__name} se desliza hacia adelante a una velocidad de {self.__speed} m/s."
+        elif self.__direction == "backward":
+            return f"{self.__name} se desliza hacia atrás a una velocidad de {self.__speed} m/s."
         else:
-            return f"{self.name} no se mueve."
+            return f"{self.__name} no se mueve."
 
     def __str__(self):
         """
@@ -33,7 +33,7 @@ class SlidingObject:
         Returns:
             str: Una cadena que describe el objeto que se desliza.
         """
-        return f"{self.name} se desliza a una velocidad de {self.speed} m/s en la dirección {self.direction}."
+        return f"{self.__name} se desliza a una velocidad de {self.__speed} m/s en la dirección {self.__direction}."
 
 
 # Ejemplo de uso
