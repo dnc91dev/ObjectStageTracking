@@ -13,6 +13,64 @@ class SlidingObject:
         self.__speed = speed
         self.__direction = direction
 
+
+    # aplicar herencia
+    @property
+    def name(self):
+        """
+        Propiedad que devuelve el nombre del objeto.
+        
+        Returns:
+            str: El nombre del objeto.
+        """
+        return self.__name
+
+    @name.setter
+    def name(self,value):
+        """
+        Propiedad que establece el nombre del objeto
+        
+        Args:
+            value (str): El nuevo nombre del objeto.
+        """
+        self.__name = value
+
+    @property
+    def speed(self):
+        """
+        Porpiedad que devuelve la velocidad del objeto
+        Returns:
+            float: La velocidad del objeto.
+        """
+        return self.__speed
+
+    @speed.setter
+    def speed(self, value):
+        """
+        Propiedad que establece la velocidad del objeto
+        """
+        self.__speed = value
+        
+    @property
+    def direction(self):
+        """
+        Propiedad que devuelve la dirección del objeto
+        
+        Returns:
+            str: La dirección del objeto.
+        """
+        returns self.__direction
+    
+    @direction.setter
+    def direction(self, value):
+        """
+        Propiedad que establece la dirección del objeto
+        
+        Args:
+            value (str): La nueva dirección del objeto
+        """
+        self.__direction = value
+          
     def move(self):
         """
         Mover el objeto que se desliza.
